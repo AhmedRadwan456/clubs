@@ -20,11 +20,11 @@ const rides = [
     paid: true,
   },
   {
-    emoji: "🚀",
-    name: "المقلاع البشري",
-    desc: "انطلاق صاروخي للسماء بسرعة خيالية — اللعبة الأكثر رعباً وإثارة",
-    tag: "Extreme",
-    tagColor: "bg-red-100 text-red-600",
+    emoji: "🧊",
+    name: "صالة الجليد",
+    desc: "أكبر صالة تزلج على الجليد للهروب من الحر والاستمتاع بوقت رائع",
+    tag: "مرح",
+    tagColor: "bg-sky-100 text-sky-600",
     paid: true,
   },
   {
