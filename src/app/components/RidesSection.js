@@ -86,6 +86,27 @@ const rides = [
     tag: "أطفال",
     tagColor: "bg-pink-100 text-pink-600",
   },
+  {
+    emoji: "☕",
+    name: "الفناجين الدوارة",
+    desc: "دورانات سريعة ومرحة داخل فناجين ملونة ضخمة — لعبة كلاسيكية مفضلة",
+    tag: "عائلي",
+    tagColor: "bg-orange-100 text-orange-600",
+  },
+  {
+    emoji: "🚢",
+    name: "السفينة المتأرجحة",
+    desc: "تأرجح في الهواء كالقراصنة بتجربة تجمع بين المرح والمغامرة",
+    tag: "إثارة",
+    tagColor: "bg-teal-100 text-teal-600",
+  },
+  {
+    emoji: "🚂",
+    name: "قطار المناجم",
+    desc: "رحلة سريعة وملتوية في جبال ومناجم افتراضية للأسرة كلها",
+    tag: "عائلي",
+    tagColor: "bg-yellow-100 text-yellow-700",
+  },
 ];
 
 export default function RidesSection() {
