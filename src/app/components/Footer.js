@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              مدينة الملاهي العالمية في قلب العاصمة الإدارية الجديدة — بحث تخرج 2025 — تجارب ترفيهية استثنائية لجميع الأعمار.
+              مدينة الملاهي العالمية في قلب العاصمة الإدارية الجديدة — تجارب ترفيهية استثنائية لجميع الأعمار.
             </p>
             <div className="flex gap-3 mt-6">
               {[Heart, Globe2, Share2].map((Icon, i) => (
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
           <p>© 2025 Adventure World — ملاهي عالمية. جميع الحقوق محفوظة.</p>
-          <p className="text-slate-600">بحث تخرّج — العاصمة الإدارية الجديدة — مصر</p>
+          <p className="text-slate-600">العاصمة الإدارية الجديدة — مصر</p>
         </div>
       </div>
     </footer>

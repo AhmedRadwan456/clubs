@@ -43,7 +43,7 @@ export default function HeroSection({ onBookNow }) {
               <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
               <span className="font-black text-sm">4.9</span>
             </div>
-            <p className="text-xs text-slate-500 mt-0.5">بحث تخرّج 2025</p>
+            <p className="text-xs text-slate-500 mt-0.5">تقييم الزوار</p>
           </div>
         </motion.div>
       </div>
