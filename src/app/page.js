@@ -40,7 +40,7 @@ export default function Home() {
       <AnimatePresence>
         {modalOpen && (
           <BookingModal
-            initialType={initialTicketType}
+            initialData={initialTicketType}
             onClose={closeModal}
           />
         )}
