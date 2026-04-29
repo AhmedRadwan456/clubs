@@ -2,21 +2,13 @@
 import { motion } from "framer-motion";
 
 const rides = [
-  // --- ⭐️ الألعاب المميزة (المدفوعة) - 6 ألعاب ---
+  // --- ⭐️ الألعاب المميزة (المدفوعة إضافياً) - المتعارف عليها إنها غالية - 6 ألعاب ---
   {
-    emoji: "🎢",
-    name: "الأفعونية الفائقة",
-    desc: "أسرع أفعونية في الشرق الأوسط — تصل إلى 120 كم/س بانقلابات مذهلة",
-    tag: "Extreme",
-    tagColor: "bg-red-100 text-red-600",
-    paid: true,
-  },
-  {
-    emoji: "🗼",
-    name: "برج السقوط الحر",
-    desc: "سقوط حر من ارتفاع 60 متراً — تجربة تحبس الأنفاس لمحبي الأدرينالين",
+    emoji: "🏎️",
+    name: "حلبة الكارتينج",
+    desc: "أكبر حلبة سباق سيارات احترافية — نافس أصدقائك بمهارة وسرعة",
     tag: "إثارة",
-    tagColor: "bg-orange-100 text-orange-600",
+    tagColor: "bg-emerald-100 text-emerald-600",
     paid: true,
   },
   {
@@ -28,31 +20,63 @@ const rides = [
     paid: true,
   },
   {
-    emoji: "🌊",
-    name: "شلالات الأدغال",
-    desc: "ركوب القوارب الخشبية والسقوط المفاجئ في بحيرة ضخمة من ارتفاع عالي",
-    tag: "مائي",
-    tagColor: "bg-cyan-100 text-cyan-600",
-    paid: true,
-  },
-  {
-    emoji: "🏎️",
-    name: "حلبة الكارتينج",
-    desc: "أكبر حلبة سباق سيارات احترافية — نافس أصدقائك بمهارة وسرعة",
-    tag: "إثارة",
-    tagColor: "bg-emerald-100 text-emerald-600",
-    paid: true,
-  },
-  {
-    emoji: "✂️",
-    name: "المقص العملاق",
-    desc: "تأرجح مزدوج ومقلوب 360 درجة في الهواء — فقط لأصحاب القلوب القوية",
-    tag: "إثارة",
+    emoji: "🚀",
+    name: "المقلاع البشري",
+    desc: "انطلاق صاروخي للسماء بسرعة خيالية — اللعبة الأكثر رعباً وإثارة",
+    tag: "Extreme",
     tagColor: "bg-red-100 text-red-600",
     paid: true,
   },
+  {
+    emoji: "👓",
+    name: "سينما 9D التفاعلية",
+    desc: "تجربة واقع افتراضي مبهرة مع حركة، هواء، ومؤثرات حقيقية",
+    tag: "تكنولوجيا",
+    tagColor: "bg-purple-100 text-purple-600",
+    paid: true,
+  },
+  {
+    emoji: "🧗‍♂️",
+    name: "الزيبلاين العملاق",
+    desc: "تحليق في الهواء فوق كل الملاهي على سلك بطول المتنزه بالكامل",
+    tag: "مغامرة",
+    tagColor: "bg-teal-100 text-teal-600",
+    paid: true,
+  },
+  {
+    emoji: "👻",
+    name: "بيت الرعب الحقيقي",
+    desc: "رحلة مرعبة داخل قصر مظلم مليء بالممثلين الحقيقيين والمفاجآت",
+    tag: "Horror",
+    tagColor: "bg-slate-100 text-slate-800",
+    paid: true,
+  },
 
-  // --- ✔️ الألعاب المجانية (المشمولة) - 6 ألعاب ---
+  // --- ✔️ الألعاب المجانية (المشمولة بتذكرة الدخول) - 6 ألعاب ---
+  {
+    emoji: "🎢",
+    name: "الأفعونية الفائقة",
+    desc: "أسرع أفعونية في الشرق الأوسط — تصل إلى 120 كم/س بانقلابات مذهلة",
+    tag: "Extreme",
+    tagColor: "bg-red-100 text-red-600",
+    paid: false,
+  },
+  {
+    emoji: "🗼",
+    name: "برج السقوط الحر",
+    desc: "سقوط حر من ارتفاع 60 متراً — تجربة تحبس الأنفاس لمحبي الأدرينالين",
+    tag: "إثارة",
+    tagColor: "bg-orange-100 text-orange-600",
+    paid: false,
+  },
+  {
+    emoji: "🌊",
+    name: "شلالات الأدغال",
+    desc: "ركوب القوارب الخشبية والسقوط المفاجئ في بحيرة ضخمة",
+    tag: "مائي",
+    tagColor: "bg-cyan-100 text-cyan-600",
+    paid: false,
+  },
   {
     emoji: "🎡",
     name: "عجلة عين العاصمة",
@@ -62,35 +86,11 @@ const rides = [
     paid: false,
   },
   {
-    emoji: "👻",
-    name: "قصر الرعب",
-    desc: "رحلة مرعبة داخل قصر مظلم مليء بالمفاجآت الحية والمؤثرات الخاصة",
-    tag: "Horror",
-    tagColor: "bg-slate-100 text-slate-600",
-    paid: false,
-  },
-  {
-    emoji: "⛵",
-    name: "سفينة القراصنة",
-    desc: "تأرجح عالي في الهواء كالقراصنة بتجربة كلاسيكية تجمع بين المرح والمغامرة",
-    tag: "عائلي",
-    tagColor: "bg-teal-100 text-teal-600",
-    paid: false,
-  },
-  {
     emoji: "💥",
     name: "السيارات التصادمية",
     desc: "ساحة السيارات الكهربائية — مرح لا حدود له للشباب والعائلات",
     tag: "مرح",
     tagColor: "bg-amber-100 text-amber-600",
-    paid: false,
-  },
-  {
-    emoji: "☕",
-    name: "الفناجين الراقصة",
-    desc: "دورانات سريعة ومرحة داخل فناجين ملونة ضخمة — لعبة لا تفقد متعتها",
-    tag: "مرح",
-    tagColor: "bg-orange-100 text-orange-600",
     paid: false,
   },
   {
@@ -153,7 +153,7 @@ export default function RidesSection() {
             className="group relative bg-white rounded-3xl p-6 border-2 border-slate-50 hover:border-indigo-100 hover:shadow-xl hover:shadow-indigo-50 transition-all duration-300"
           >
             {/* Free/Paid Badge */}
-            <div className={`absolute top-5 left-5 px-3 py-1 text-[10px] font-black rounded-full border ${ride.paid ? "bg-amber-50 text-amber-600 border-amber-200" : "bg-emerald-50 text-emerald-600 border-emerald-200"}`}>
+            <div className={`absolute top-5 left-5 px-3 py-1 text-[10px] font-bold rounded-full border ${ride.paid ? "bg-amber-50 text-amber-700 border-amber-200" : "bg-emerald-50 text-emerald-700 border-emerald-200"}`}>
               {ride.paid ? "⭐️ لعبة مميزة (مدفوعة)" : "✔️ مشمولة بالدخول"}
             </div>
 
