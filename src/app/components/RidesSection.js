@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 const rides = [
-  // --- ⭐️ الألعاب المميزة (المدفوعة) - 9 ألعاب ---
+  // --- ⭐️ الألعاب المميزة (المدفوعة) - 6 ألعاب ---
   {
     emoji: "🎢",
     name: "الأفعونية الفائقة",
@@ -44,14 +44,6 @@ const rides = [
     paid: true,
   },
   {
-    emoji: "🛸",
-    name: "الطبق الطائر",
-    desc: "بندول عملاق يتأرجح ويدور في نفس الوقت لارتفاعات شاهقة",
-    tag: "Extreme",
-    tagColor: "bg-purple-100 text-purple-600",
-    paid: true,
-  },
-  {
     emoji: "✂️",
     name: "المقص العملاق",
     desc: "تأرجح مزدوج ومقلوب 360 درجة في الهواء — فقط لأصحاب القلوب القوية",
@@ -59,24 +51,8 @@ const rides = [
     tagColor: "bg-red-100 text-red-600",
     paid: true,
   },
-  {
-    emoji: "🛶",
-    name: "نهر التجديف السريع",
-    desc: "مغامرة مائية وسط أمواج اصطناعية ودوامات عنيفة في قوارب دائرية",
-    tag: "مائي",
-    tagColor: "bg-cyan-100 text-cyan-600",
-    paid: true,
-  },
-  {
-    emoji: "🌪️",
-    name: "إعصار المنخل",
-    desc: "دوران واهتزاز عنيف في كل الاتجاهات — تجربة مليئة بالضحك والمرح",
-    tag: "إثارة",
-    tagColor: "bg-orange-100 text-orange-600",
-    paid: true,
-  },
 
-  // --- ✔️ الألعاب المجانية (المشمولة) - 9 ألعاب ---
+  // --- ✔️ الألعاب المجانية (المشمولة) - 6 ألعاب ---
   {
     emoji: "🎡",
     name: "عجلة عين العاصمة",
@@ -110,35 +86,11 @@ const rides = [
     paid: false,
   },
   {
-    emoji: "🚂",
-    name: "قطار المناجم المفقودة",
-    desc: "رحلة سريعة وملتوية داخل جبال ومناجم افتراضية مناسبة للأسرة كلها",
-    tag: "مغامرة",
-    tagColor: "bg-yellow-100 text-yellow-700",
-    paid: false,
-  },
-  {
     emoji: "☕",
     name: "الفناجين الراقصة",
     desc: "دورانات سريعة ومرحة داخل فناجين ملونة ضخمة — لعبة لا تفقد متعتها",
     tag: "مرح",
     tagColor: "bg-orange-100 text-orange-600",
-    paid: false,
-  },
-  {
-    emoji: "🎪",
-    name: "السيرك السحري",
-    desc: "خيمة تفاعلية تضم عروض بهلوانية وألعاب خفة تناسب جميع الأعمار",
-    tag: "عائلي",
-    tagColor: "bg-pink-100 text-pink-600",
-    paid: false,
-  },
-  {
-    emoji: "🧊",
-    name: "صالة الجليد",
-    desc: "أكبر صالة تزلج على الجليد للهروب من الحر والاستمتاع بوقت رائع",
-    tag: "مرح",
-    tagColor: "bg-sky-100 text-sky-600",
     paid: false,
   },
   {
@@ -167,7 +119,7 @@ export default function RidesSection() {
           عالم <span className="gradient-text">المغامرات</span>
         </h2>
         <p className="text-slate-500 max-w-lg mx-auto text-lg">
-          يضم 18 لعبة من أقوى وأشهر الألعاب — 9 ألعاب مجانية مع التذكرة، و 9 ألعاب مميزة (مدفوعة) للباقات
+          يضم 12 لعبة من أقوى وأشهر الألعاب — 6 ألعاب مجانية مع التذكرة، و 6 ألعاب مميزة (مدفوعة) للباقات
         </p>
       </motion.div>
 
