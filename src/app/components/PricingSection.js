@@ -15,7 +15,7 @@ export default function PricingSection({ onBook, lang }) {
       desc: "4 باقات مختلفة تناسب كل الاحتياجات — جميع الباقات صالحة ليوم كامل",
       arabBtn: "🌙 زائر عربي",
       foreignBtn: "🌍 زائر أجنبي",
-      discount: "👶 خصم يصل إلى 40% للأطفال أقل من 10 سنوات (تُحسب في شاشة الحجز)",
+      discount: "👶 خصم يصل إلى 40% للأطفال أقل من 10 سنوات",
       currency: "ج.م",
       perAdult: "/ بالغ",
       bookBtn: "احجز هذه الباقة",
@@ -35,7 +35,7 @@ export default function PricingSection({ onBook, lang }) {
       desc: "4 different packages to suit all needs — all packages are valid for a full day",
       arabBtn: "🌙 Arab",
       foreignBtn: "🌍 International",
-      discount: "👶 Up to 40% discount for children under 10 (calculated at checkout)",
+      discount: "👶 Up to 40% discount for children under 10",
       currency: "EGP",
       perAdult: "/ adult",
       bookBtn: "Book Package",
@@ -103,8 +103,8 @@ export default function PricingSection({ onBook, lang }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`relative bg-white rounded-3xl p-6 border-2 flex flex-col transition-all duration-300 ${
-                pkg.highlight ? "border-indigo-500 shadow-2xl shadow-indigo-200 scale-105 z-10" : "border-slate-100 hover:border-indigo-200 hover:shadow-xl"
+              className={`relative bg-white/70 backdrop-blur-md rounded-3xl p-6 border-2 flex flex-col transition-all duration-300 ${
+                pkg.highlight ? "border-indigo-500 shadow-2xl shadow-indigo-200 scale-105 z-10 bg-white" : "border-white/60 shadow-sm hover:bg-white hover:border-indigo-200 hover:shadow-xl"
               }`}
             >
               {pkg.highlight && (

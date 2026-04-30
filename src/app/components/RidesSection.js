@@ -98,7 +98,7 @@ export default function RidesSection({ lang }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.04 }}
-            className="group relative bg-white rounded-3xl p-6 border-2 border-slate-50 hover:border-indigo-100 hover:shadow-xl hover:shadow-indigo-50 transition-all duration-300"
+            className="group relative bg-white/70 backdrop-blur-md rounded-3xl p-6 border-2 border-white/60 shadow-sm hover:bg-white hover:border-indigo-100 hover:shadow-xl hover:shadow-indigo-50 transition-all duration-300"
           >
             <div className={`absolute top-5 ${lang === 'ar' ? 'left-5' : 'right-5'} px-3 py-1 text-[10px] font-bold rounded-full border ${ride.paid ? "bg-amber-50 text-amber-700 border-amber-200" : "bg-emerald-50 text-emerald-700 border-emerald-200"}`}>
               {ride.paid ? t.paidBadge : t.freeBadge}

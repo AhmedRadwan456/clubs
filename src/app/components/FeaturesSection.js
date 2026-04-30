@@ -38,7 +38,7 @@ export default function FeaturesSection({ lang }) {
   const t = dict[lang];
 
   return (
-    <section id="features" className="py-24 bg-slate-50/70">
+    <section id="features" className="py-24 relative">
       <div className="px-6 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ export default function FeaturesSection({ lang }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className="bg-white rounded-3xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="bg-white/70 backdrop-blur-md rounded-3xl p-6 border border-white/50 shadow-sm hover:shadow-xl hover:bg-white transition-all duration-300 hover:-translate-y-1"
               >
                 <div className={`w-11 h-11 rounded-xl ${f.color} flex items-center justify-center mb-4`}>
                   <Icon className="w-5 h-5" />
