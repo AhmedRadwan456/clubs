@@ -34,9 +34,9 @@ export default function BookingModal({ initialData, onClose, lang }) {
       arab: "🌙 زائر عربي",
       foreign: "🌍 زائر أجنبي",
       pkg1: "باقة الدخول الأساسية",
-      pkg2: "باقة المغامر (+3 ألعاب مدفوعة)",
-      pkg3: "باقة البطل (+5 ألعاب مدفوعة)",
-      pkg4: "باقة VIP الشاملة",
+      pkg2: "باقة المغامر (3 ألعاب مدفوعة)",
+      pkg3: "باقة الإثارة الكاملة (كل الألعاب)",
+      pkg4: "باقة VIP الملكية الشاملة",
       adults: "بالغين",
       children: "أطفال (أقل من ١٠)",
       currency: "ج.م",
@@ -56,16 +56,16 @@ export default function BookingModal({ initialData, onClose, lang }) {
       done: "تمام ✓",
       packageConfig: {
         arab: {
-          "basic": { adult: 350, child: 200, name: "الدخول الأساسية" },
-          "3-rides": { adult: 550, child: 350, name: "المغامر (3 ألعاب)" },
-          "5-rides": { adult: 750, child: 450, name: "البطل (5 ألعاب)" },
-          "vip": { adult: 1000, child: 650, name: "VIP الشاملة" }
+          "basic": { adult: 1500, child: 900, name: "الدخول الأساسية" },
+          "3-rides": { adult: 3000, child: 1800, name: "المغامر (3 ألعاب)" },
+          "full-access": { adult: 4500, child: 2700, name: "الإثارة الكاملة" },
+          "vip": { adult: 10000, child: 6000, name: "VIP الملكية" }
         },
         foreigner: {
-          "basic": { adult: 700, child: 450, name: "Basic Entry" },
-          "3-rides": { adult: 1000, child: 700, name: "Adventurer (3 Rides)" },
-          "5-rides": { adult: 1300, child: 900, name: "Hero (5 Rides)" },
-          "vip": { adult: 1900, child: 1300, name: "VIP All-Inclusive" }
+          "basic": { adult: 3000, child: 1800, name: "Basic Entry" },
+          "3-rides": { adult: 6000, child: 3500, name: "Adventurer (3 Rides)" },
+          "full-access": { adult: 9000, child: 5500, name: "Full Thrill Pack" },
+          "vip": { adult: 20000, child: 12000, name: "Royal VIP" }
         }
       }
     },
@@ -75,9 +75,9 @@ export default function BookingModal({ initialData, onClose, lang }) {
       arab: "🌙 Arab",
       foreign: "🌍 International",
       pkg1: "Basic Entry",
-      pkg2: "Adventurer (+3 Premium Rides)",
-      pkg3: "Hero (+5 Premium Rides)",
-      pkg4: "VIP All-Inclusive",
+      pkg2: "Adventurer (3 Premium Rides)",
+      pkg3: "Full Thrill Pack (All Rides)",
+      pkg4: "Royal VIP All-Inclusive",
       adults: "Adults",
       children: "Children (< 10)",
       currency: "EGP",
@@ -97,16 +97,16 @@ export default function BookingModal({ initialData, onClose, lang }) {
       done: "Done ✓",
       packageConfig: {
         arab: {
-          "basic": { adult: 350, child: 200, name: "Basic Entry" },
-          "3-rides": { adult: 550, child: 350, name: "Adventurer (3 Rides)" },
-          "5-rides": { adult: 750, child: 450, name: "Hero (5 Rides)" },
-          "vip": { adult: 1000, child: 650, name: "VIP All-Inclusive" }
+          "basic": { adult: 1500, child: 900, name: "Basic Entry" },
+          "3-rides": { adult: 3000, child: 1800, name: "Adventurer (3 Rides)" },
+          "full-access": { adult: 4500, child: 2700, name: "Full Thrill Pack" },
+          "vip": { adult: 10000, child: 6000, name: "Royal VIP" }
         },
         foreigner: {
-          "basic": { adult: 700, child: 450, name: "Basic Entry" },
-          "3-rides": { adult: 1000, child: 700, name: "Adventurer (3 Rides)" },
-          "5-rides": { adult: 1300, child: 900, name: "Hero (5 Rides)" },
-          "vip": { adult: 1900, child: 1300, name: "VIP All-Inclusive" }
+          "basic": { adult: 3000, child: 1800, name: "Basic Entry" },
+          "3-rides": { adult: 6000, child: 3500, name: "Adventurer (3 Rides)" },
+          "full-access": { adult: 9000, child: 5500, name: "Full Thrill Pack" },
+          "vip": { adult: 20000, child: 12000, name: "Royal VIP" }
         }
       }
     }
