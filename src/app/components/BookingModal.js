@@ -31,7 +31,7 @@ export default function BookingModal({ initialData, onClose, lang }) {
     ar: {
       title: "إتمام الحجز",
       subtitle: "حدد تفاصيل تذكرتك وعدد الأفراد",
-      arab: "🌙 زائر عربي / مصري",
+      arab: "🌙 زائر عربي",
       foreign: "🌍 زائر أجنبي",
       pkg1: "باقة الدخول الأساسية (مجاني فقط)",
       pkg2: "باقة المغامر (+3 ألعاب مدفوعة)",
@@ -72,7 +72,7 @@ export default function BookingModal({ initialData, onClose, lang }) {
     en: {
       title: "Complete Booking",
       subtitle: "Select ticket details and number of visitors",
-      arab: "🌙 Arab / Egyptian",
+      arab: "🌙 Arab",
       foreign: "🌍 International",
       pkg1: "Basic Entry (Free Rides Only)",
       pkg2: "Adventurer (+3 Premium Rides)",
