@@ -56,16 +56,16 @@ export default function BookingModal({ initialData, onClose, lang }) {
       done: "تمام ✓",
       packageConfig: {
         arab: {
-          "basic": { adult: 150, child: 100, name: "الدخول الأساسية" },
-          "3-rides": { adult: 250, child: 150, name: "المغامر (3 ألعاب)" },
-          "5-rides": { adult: 350, child: 200, name: "البطل (5 ألعاب)" },
-          "vip": { adult: 500, child: 300, name: "VIP الشاملة" }
+          "basic": { adult: 250, child: 150, name: "الدخول الأساسية" },
+          "3-rides": { adult: 450, child: 300, name: "المغامر (3 ألعاب)" },
+          "5-rides": { adult: 650, child: 400, name: "البطل (5 ألعاب)" },
+          "vip": { adult: 900, child: 600, name: "VIP الشاملة" }
         },
         foreigner: {
-          "basic": { adult: 400, child: 250, name: "Basic Entry" },
-          "3-rides": { adult: 600, child: 400, name: "Adventurer (3 Rides)" },
-          "5-rides": { adult: 800, child: 500, name: "Hero (5 Rides)" },
-          "vip": { adult: 1200, child: 800, name: "VIP All-Inclusive" }
+          "basic": { adult: 600, child: 400, name: "Basic Entry" },
+          "3-rides": { adult: 900, child: 600, name: "Adventurer (3 Rides)" },
+          "5-rides": { adult: 1200, child: 800, name: "Hero (5 Rides)" },
+          "vip": { adult: 1800, child: 1200, name: "VIP All-Inclusive" }
         }
       }
     },
@@ -97,16 +97,16 @@ export default function BookingModal({ initialData, onClose, lang }) {
       done: "Done ✓",
       packageConfig: {
         arab: {
-          "basic": { adult: 150, child: 100, name: "Basic Entry" },
-          "3-rides": { adult: 250, child: 150, name: "Adventurer (3 Rides)" },
-          "5-rides": { adult: 350, child: 200, name: "Hero (5 Rides)" },
-          "vip": { adult: 500, child: 300, name: "VIP All-Inclusive" }
+          "basic": { adult: 250, child: 150, name: "Basic Entry" },
+          "3-rides": { adult: 450, child: 300, name: "Adventurer (3 Rides)" },
+          "5-rides": { adult: 650, child: 400, name: "Hero (5 Rides)" },
+          "vip": { adult: 900, child: 600, name: "VIP All-Inclusive" }
         },
         foreigner: {
-          "basic": { adult: 400, child: 250, name: "Basic Entry" },
-          "3-rides": { adult: 600, child: 400, name: "Adventurer (3 Rides)" },
-          "5-rides": { adult: 800, child: 500, name: "Hero (5 Rides)" },
-          "vip": { adult: 1200, child: 800, name: "VIP All-Inclusive" }
+          "basic": { adult: 600, child: 400, name: "Basic Entry" },
+          "3-rides": { adult: 900, child: 600, name: "Adventurer (3 Rides)" },
+          "5-rides": { adult: 1200, child: 800, name: "Hero (5 Rides)" },
+          "vip": { adult: 1800, child: 1200, name: "VIP All-Inclusive" }
         }
       }
     }
