@@ -53,14 +53,8 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      {/* Fixed Background Image */}
-      <div className="fixed inset-0 pointer-events-none z-[-2]">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?q=80&w=2070&auto=format&fit=crop')" }}
-        />
-        <div className="absolute inset-0 bg-white/85 backdrop-blur-[3px]" />
-      </div>
+      {/* Background is now in HeroSection */}
+      <div className="fixed inset-0 bg-slate-50 z-[-2]" />
 
       {/* Background decorative blobs */}
       <div className="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
