@@ -21,10 +21,10 @@ export default function PricingSection({ onBook, lang }) {
       bookBtn: "احجز هذه الباقة",
       popular: "الأكثر شعبية",
       packages: [
-        { id: "basic", name: "باقة الدخول الأساسية", desc: "دخول للمتنزه مع الاستمتاع بكل الألعاب المجانية", arabPrice: 250, foreignerPrice: 600, perks: ["دخول كامل للمتنزه", "6 ألعاب مجانية مشمولة", "دخول منطقة الأطفال", "حضور العروض الحية"], highlight: false, color: "from-slate-500 to-slate-600" },
-        { id: "3-rides", name: "باقة المغامر (3 ألعاب)", desc: "الباقة الأساسية + اختيار 3 ألعاب مميزة", arabPrice: 450, foreignerPrice: 900, perks: ["جميع مميزات الباقة الأساسية", "اختيار 3 ألعاب مميزة (مدفوعة)", "توفير 20% من سعر التذاكر الفردية"], highlight: false, color: "from-blue-500 to-cyan-500" },
-        { id: "5-rides", name: "باقة البطل (5 ألعاب)", desc: "الباقة الأساسية + اختيار 5 ألعاب مميزة", arabPrice: 650, foreignerPrice: 1200, perks: ["جميع مميزات الباقة الأساسية", "اختيار 5 ألعاب مميزة (مدفوعة)", "توفير 35% من سعر التذاكر الفردية", "صورة تذكارية مجانية"], highlight: true, color: "from-indigo-600 to-purple-600" },
-        { id: "vip", name: "باقة VIP الشاملة", desc: "اللعب بلا حدود وبدون طوابير", arabPrice: 900, foreignerPrice: 1800, perks: ["دخول غير محدود لجميع الألعاب", "أولوية الدخول (Fast Track)", "وجبة مجانية من المطعم الرئيسي", "أفضل قيمة للمتعة الكاملة"], highlight: false, color: "from-amber-500 to-yellow-500" }
+        { id: "basic", name: "باقة الدخول الأساسية", desc: "دخول للمتنزه مع الاستمتاع بكل الألعاب المجانية", arabPrice: 350, foreignerPrice: 700, perks: ["دخول كامل للمتنزه", "6 ألعاب مجانية مشمولة", "دخول منطقة الأطفال", "حضور العروض الحية"], highlight: false, color: "from-slate-500 to-slate-600" },
+        { id: "3-rides", name: "باقة المغامر (3 ألعاب)", desc: "الباقة الأساسية + اختيار 3 ألعاب مميزة", arabPrice: 550, foreignerPrice: 1000, perks: ["جميع مميزات الباقة الأساسية", "اختيار 3 ألعاب مميزة (مدفوعة)", "توفير 20% من سعر التذاكر الفردية"], highlight: false, color: "from-blue-500 to-cyan-500" },
+        { id: "5-rides", name: "باقة البطل (5 ألعاب)", desc: "الباقة الأساسية + اختيار 5 ألعاب مميزة", arabPrice: 750, foreignerPrice: 1300, perks: ["جميع مميزات الباقة الأساسية", "اختيار 5 ألعاب مميزة (مدفوعة)", "توفير 35% من سعر التذاكر الفردية", "صورة تذكارية مجانية"], highlight: true, color: "from-indigo-600 to-purple-600" },
+        { id: "vip", name: "باقة VIP الشاملة", desc: "اللعب بلا حدود وبدون طوابير", arabPrice: 1000, foreignerPrice: 1900, perks: ["دخول غير محدود لجميع الألعاب", "أولوية الدخول (Fast Track)", "وجبة مجانية من المطعم الرئيسي", "أفضل قيمة للمتعة الكاملة"], highlight: false, color: "from-amber-500 to-yellow-500" }
       ]
     },
     en: {
@@ -41,10 +41,10 @@ export default function PricingSection({ onBook, lang }) {
       bookBtn: "Book Package",
       popular: "Most Popular",
       packages: [
-        { id: "basic", name: "Basic Entry", desc: "Park entry and unlimited access to all free rides", arabPrice: 250, foreignerPrice: 600, perks: ["Full park access", "6 free rides included", "Kids Zone access", "Live shows and entertainment"], highlight: false, color: "from-slate-500 to-slate-600" },
-        { id: "3-rides", name: "Adventurer (3 Rides)", desc: "Basic Entry + your choice of 3 premium rides", arabPrice: 450, foreignerPrice: 900, perks: ["All Basic Entry perks", "Choice of 3 premium rides", "Save 20% on individual ticket prices"], highlight: false, color: "from-blue-500 to-cyan-500" },
-        { id: "5-rides", name: "Hero (5 Rides)", desc: "Basic Entry + your choice of 5 premium rides", arabPrice: 650, foreignerPrice: 1200, perks: ["All Basic Entry perks", "Choice of 5 premium rides", "Save 35% on individual ticket prices", "Free souvenir photo"], highlight: true, color: "from-indigo-600 to-purple-600" },
-        { id: "vip", name: "All-Inclusive VIP", desc: "Unlimited fun without the queues", arabPrice: 900, foreignerPrice: 1800, perks: ["Unlimited access to ALL rides", "Fast Track priority entry", "Complimentary meal at main restaurant", "The ultimate park experience"], highlight: false, color: "from-amber-500 to-yellow-500" }
+        { id: "basic", name: "Basic Entry", desc: "Park entry and unlimited access to all free rides", arabPrice: 350, foreignerPrice: 700, perks: ["Full park access", "6 free rides included", "Kids Zone access", "Live shows and entertainment"], highlight: false, color: "from-slate-500 to-slate-600" },
+        { id: "3-rides", name: "Adventurer (3 Rides)", desc: "Basic Entry + your choice of 3 premium rides", arabPrice: 550, foreignerPrice: 1000, perks: ["All Basic Entry perks", "Choice of 3 premium rides", "Save 20% on individual ticket prices"], highlight: false, color: "from-blue-500 to-cyan-500" },
+        { id: "5-rides", name: "Hero (5 Rides)", desc: "Basic Entry + your choice of 5 premium rides", arabPrice: 750, foreignerPrice: 1300, perks: ["All Basic Entry perks", "Choice of 5 premium rides", "Save 35% on individual ticket prices", "Free souvenir photo"], highlight: true, color: "from-indigo-600 to-purple-600" },
+        { id: "vip", name: "All-Inclusive VIP", desc: "Unlimited fun without the queues", arabPrice: 1000, foreignerPrice: 1900, perks: ["Unlimited access to ALL rides", "Fast Track priority entry", "Complimentary meal at main restaurant", "The ultimate park experience"], highlight: false, color: "from-amber-500 to-yellow-500" }
       ]
     }
   };
