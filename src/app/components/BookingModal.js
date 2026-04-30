@@ -56,16 +56,16 @@ export default function BookingModal({ initialData, onClose, lang }) {
       done: "تمام ✓",
       packageConfig: {
         arab: {
-          "basic": { adult: 1500, child: 900, name: "الدخول الأساسية" },
-          "3-rides": { adult: 3000, child: 1800, name: "المغامر (3 ألعاب)" },
-          "full-access": { adult: 4500, child: 2700, name: "الإثارة الكاملة" },
-          "vip": { adult: 10000, child: 6000, name: "VIP الملكية" }
+          "basic": { adult: 350, child: 200, name: "الدخول الأساسية" },
+          "3-rides": { adult: 550, child: 350, name: "المغامر (3 ألعاب)" },
+          "full-access": { adult: 750, child: 450, name: "الإثارة الكاملة" },
+          "vip": { adult: 1000, child: 650, name: "VIP الملكية" }
         },
         foreigner: {
-          "basic": { adult: 3000, child: 1800, name: "Basic Entry" },
-          "3-rides": { adult: 6000, child: 3500, name: "Adventurer (3 Rides)" },
-          "full-access": { adult: 9000, child: 5500, name: "Full Thrill Pack" },
-          "vip": { adult: 20000, child: 12000, name: "Royal VIP" }
+          "basic": { adult: 700, child: 450, name: "Basic Entry" },
+          "3-rides": { adult: 1000, child: 700, name: "Adventurer (3 Rides)" },
+          "full-access": { adult: 1300, child: 900, name: "Full Thrill Pack" },
+          "vip": { adult: 1900, child: 1300, name: "Royal VIP" }
         }
       }
     },
@@ -97,16 +97,16 @@ export default function BookingModal({ initialData, onClose, lang }) {
       done: "Done ✓",
       packageConfig: {
         arab: {
-          "basic": { adult: 1500, child: 900, name: "Basic Entry" },
-          "3-rides": { adult: 3000, child: 1800, name: "Adventurer (3 Rides)" },
-          "full-access": { adult: 4500, child: 2700, name: "Full Thrill Pack" },
-          "vip": { adult: 10000, child: 6000, name: "Royal VIP" }
+          "basic": { adult: 350, child: 200, name: "Basic Entry" },
+          "3-rides": { adult: 550, child: 350, name: "Adventurer (3 Rides)" },
+          "full-access": { adult: 750, child: 450, name: "Full Thrill Pack" },
+          "vip": { adult: 1000, child: 650, name: "Royal VIP" }
         },
         foreigner: {
-          "basic": { adult: 3000, child: 1800, name: "Basic Entry" },
-          "3-rides": { adult: 6000, child: 3500, name: "Adventurer (3 Rides)" },
-          "full-access": { adult: 9000, child: 5500, name: "Full Thrill Pack" },
-          "vip": { adult: 20000, child: 12000, name: "Royal VIP" }
+          "basic": { adult: 700, child: 450, name: "Basic Entry" },
+          "3-rides": { adult: 1000, child: 700, name: "Adventurer (3 Rides)" },
+          "full-access": { adult: 1300, child: 900, name: "Full Thrill Pack" },
+          "vip": { adult: 1900, child: 1300, name: "Royal VIP" }
         }
       }
     }
