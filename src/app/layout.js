@@ -7,13 +7,13 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Adventure World | ملاهي عالمية — العاصمة الإدارية الجديدة",
-  description: "مدينة الملاهي العالمية في العاصمة الإدارية الجديدة — تجربة ترفيهية استثنائية لجميع الأعمار. احجز تذكرتك الآن.",
+  title: "Adventure World | Theme Park — New Administrative Capital",
+  description: "World-class theme park in the New Administrative Capital — An exceptional entertainment experience for all ages. Book your tickets now.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ar" dir="ltr" className="h-full antialiased">
+    <html lang="en" dir="ltr" className="h-full antialiased">
       <body className={`${inter.variable} font-sans min-h-full flex flex-col`}>
         {children}
       </body>

@@ -1,40 +1,46 @@
 "use client";
-
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
-
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import RidesSection from "./components/RidesSection";
 import FeaturesSection from "./components/FeaturesSection";
 import PricingSection from "./components/PricingSection";
-import Footer from "./components/Footer";
 import BookingModal from "./components/BookingModal";
+import Footer from "./components/Footer";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
   const [initialTicketType, setInitialTicketType] = useState(null);
+  
+  // Set default language to Arabic
+  const [lang, setLang] = useState("ar");
 
-  const openBooking = (type = null) => {
-    setInitialTicketType(type);
+  // Update document direction when language changes
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  }, [lang]);
+
+  const openBooking = (data = null) => {
+    setInitialTicketType(data);
     setModalOpen(true);
   };
 
   const closeModal = () => {
     setModalOpen(false);
-    setInitialTicketType(null);
   };
 
   return (
     <>
-      <Navbar onBookNow={() => openBooking()} />
+      <Navbar onBookNow={() => openBooking()} lang={lang} setLang={setLang} />
 
-      <main className="bg-[#fdfcff] overflow-x-hidden">
-        <HeroSection onBookNow={() => openBooking()} />
-        <RidesSection />
-        <FeaturesSection />
-        <PricingSection onBook={openBooking} />
-        <Footer />
+      <main className="bg-[#fdfcff] overflow-x-hidden pt-10">
+        <HeroSection onBookNow={() => openBooking()} lang={lang} />
+        <RidesSection lang={lang} />
+        <FeaturesSection lang={lang} />
+        <PricingSection onBook={openBooking} lang={lang} />
+        <Footer lang={lang} />
       </main>
 
       <AnimatePresence>
@@ -42,6 +48,7 @@ export default function Home() {
           <BookingModal
             initialData={initialTicketType}
             onClose={closeModal}
+            lang={lang}
           />
         )}
       </AnimatePresence>

@@ -1,72 +1,54 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronRight, Check, Sparkles } from "lucide-react";
+import { ChevronRight, ChevronLeft, Check, Sparkles } from "lucide-react";
 
-const packages = [
-  {
-    id: "basic",
-    name: "باقة الدخول الأساسية",
-    desc: "دخول للمتنزه مع الاستمتاع بكل الألعاب المجانية",
-    arabPrice: 150,
-    foreignerPrice: 400,
-    perks: [
-      "دخول كامل للمتنزه",
-      "9 ألعاب مجانية مشمولة",
-      "دخول منطقة الأطفال",
-      "حضور العروض الحية",
-    ],
-    highlight: false,
-    color: "from-slate-500 to-slate-600",
-  },
-  {
-    id: "3-rides",
-    name: "باقة المغامر (3 ألعاب)",
-    desc: "الباقة الأساسية + اختيار 3 ألعاب مميزة",
-    arabPrice: 250,
-    foreignerPrice: 600,
-    perks: [
-      "جميع مميزات الباقة الأساسية",
-      "اختيار 3 ألعاب مميزة (مدفوعة)",
-      "توفير 20% من سعر التذاكر الفردية",
-    ],
-    highlight: false,
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    id: "5-rides",
-    name: "باقة البطل (5 ألعاب)",
-    desc: "الباقة الأساسية + اختيار 5 ألعاب مميزة",
-    arabPrice: 350,
-    foreignerPrice: 800,
-    perks: [
-      "جميع مميزات الباقة الأساسية",
-      "اختيار 5 ألعاب مميزة (مدفوعة)",
-      "توفير 35% من سعر التذاكر الفردية",
-      "صورة تذكارية مجانية",
-    ],
-    highlight: true,
-    color: "from-indigo-600 to-purple-600",
-  },
-  {
-    id: "vip",
-    name: "باقة VIP الشاملة",
-    desc: "اللعب بلا حدود وبدون طوابير",
-    arabPrice: 500,
-    foreignerPrice: 1200,
-    perks: [
-      "دخول غير محدود لجميع الألعاب",
-      "أولوية الدخول (Fast Track)",
-      "وجبة مجانية من المطعم الرئيسي",
-      "أفضل قيمة للمتعة الكاملة",
-    ],
-    highlight: false,
-    color: "from-amber-500 to-yellow-500",
-  },
-];
-
-export default function PricingSection({ onBook }) {
+export default function PricingSection({ onBook, lang }) {
   const [visitorType, setVisitorType] = useState("arab");
+
+  const dict = {
+    ar: {
+      badge: "🎟️ باقات التذاكر",
+      title1: "اختر",
+      title2: "المغامرة",
+      title3: "المناسبة لك",
+      desc: "4 باقات مختلفة تناسب كل الاحتياجات — جميع الباقات صالحة ليوم كامل",
+      arabBtn: "🌙 زائر عربي / مصري",
+      foreignBtn: "🌍 زائر أجنبي",
+      discount: "👶 خصم يصل إلى 40% للأطفال أقل من 10 سنوات (تُحسب في شاشة الحجز)",
+      currency: "ج.م",
+      perAdult: "/ بالغ",
+      bookBtn: "احجز هذه الباقة",
+      popular: "الأكثر شعبية",
+      packages: [
+        { id: "basic", name: "باقة الدخول الأساسية", desc: "دخول للمتنزه مع الاستمتاع بكل الألعاب المجانية", arabPrice: 150, foreignerPrice: 400, perks: ["دخول كامل للمتنزه", "6 ألعاب مجانية مشمولة", "دخول منطقة الأطفال", "حضور العروض الحية"], highlight: false, color: "from-slate-500 to-slate-600" },
+        { id: "3-rides", name: "باقة المغامر (3 ألعاب)", desc: "الباقة الأساسية + اختيار 3 ألعاب مميزة", arabPrice: 250, foreignerPrice: 600, perks: ["جميع مميزات الباقة الأساسية", "اختيار 3 ألعاب مميزة (مدفوعة)", "توفير 20% من سعر التذاكر الفردية"], highlight: false, color: "from-blue-500 to-cyan-500" },
+        { id: "5-rides", name: "باقة البطل (5 ألعاب)", desc: "الباقة الأساسية + اختيار 5 ألعاب مميزة", arabPrice: 350, foreignerPrice: 800, perks: ["جميع مميزات الباقة الأساسية", "اختيار 5 ألعاب مميزة (مدفوعة)", "توفير 35% من سعر التذاكر الفردية", "صورة تذكارية مجانية"], highlight: true, color: "from-indigo-600 to-purple-600" },
+        { id: "vip", name: "باقة VIP الشاملة", desc: "اللعب بلا حدود وبدون طوابير", arabPrice: 500, foreignerPrice: 1200, perks: ["دخول غير محدود لجميع الألعاب", "أولوية الدخول (Fast Track)", "وجبة مجانية من المطعم الرئيسي", "أفضل قيمة للمتعة الكاملة"], highlight: false, color: "from-amber-500 to-yellow-500" }
+      ]
+    },
+    en: {
+      badge: "🎟️ Ticket Packages",
+      title1: "Choose Your",
+      title2: "Adventure",
+      title3: "",
+      desc: "4 different packages to suit all needs — all packages are valid for a full day",
+      arabBtn: "🌙 Arab / Egyptian",
+      foreignBtn: "🌍 International",
+      discount: "👶 Up to 40% discount for children under 10 (calculated at checkout)",
+      currency: "EGP",
+      perAdult: "/ adult",
+      bookBtn: "Book Package",
+      popular: "Most Popular",
+      packages: [
+        { id: "basic", name: "Basic Entry", desc: "Park entry and unlimited access to all free rides", arabPrice: 150, foreignerPrice: 400, perks: ["Full park access", "6 free rides included", "Kids Zone access", "Live shows and entertainment"], highlight: false, color: "from-slate-500 to-slate-600" },
+        { id: "3-rides", name: "Adventurer (3 Rides)", desc: "Basic Entry + your choice of 3 premium rides", arabPrice: 250, foreignerPrice: 600, perks: ["All Basic Entry perks", "Choice of 3 premium rides", "Save 20% on individual ticket prices"], highlight: false, color: "from-blue-500 to-cyan-500" },
+        { id: "5-rides", name: "Hero (5 Rides)", desc: "Basic Entry + your choice of 5 premium rides", arabPrice: 350, foreignerPrice: 800, perks: ["All Basic Entry perks", "Choice of 5 premium rides", "Save 35% on individual ticket prices", "Free souvenir photo"], highlight: true, color: "from-indigo-600 to-purple-600" },
+        { id: "vip", name: "All-Inclusive VIP", desc: "Unlimited fun without the queues", arabPrice: 500, foreignerPrice: 1200, perks: ["Unlimited access to ALL rides", "Fast Track priority entry", "Complimentary meal at main restaurant", "The ultimate park experience"], highlight: false, color: "from-amber-500 to-yellow-500" }
+      ]
+    }
+  };
+  const t = dict[lang];
 
   return (
     <section id="pricing" className="py-24 px-6 max-w-7xl mx-auto">
@@ -77,24 +59,23 @@ export default function PricingSection({ onBook }) {
         className="text-center mb-12"
       >
         <span className="inline-block mb-3 px-4 py-1.5 bg-indigo-100 text-indigo-700 text-xs font-bold rounded-full uppercase tracking-widest">
-          🎟️ باقات التذاكر
+          {t.badge}
         </span>
         <h2 className="text-4xl md:text-5xl font-black mb-4">
-          اختر <span className="gradient-text">المغامرة</span> المناسبة لك
+          {t.title1} <span className="gradient-text">{t.title2}</span> {t.title3}
         </h2>
         <p className="text-slate-500 max-w-lg mx-auto text-lg mb-8">
-          4 باقات مختلفة تناسب كل الاحتياجات — جميع الباقات صالحة ليوم كامل
+          {t.desc}
         </p>
 
-        {/* Nationality Toggle */}
-        <div className="inline-flex bg-slate-100 p-1.5 rounded-full mb-4">
+        <div className="inline-flex flex-wrap justify-center bg-slate-100 p-1.5 rounded-full mb-4">
           <button
             onClick={() => setVisitorType("arab")}
             className={`px-8 py-2.5 rounded-full text-sm font-bold transition-all ${
               visitorType === "arab" ? "bg-white text-indigo-600 shadow-sm" : "text-slate-500 hover:text-slate-700"
             }`}
           >
-            🌙 زائر عربي / مصري
+            {t.arabBtn}
           </button>
           <button
             onClick={() => setVisitorType("foreigner")}
@@ -102,17 +83,17 @@ export default function PricingSection({ onBook }) {
               visitorType === "foreigner" ? "bg-white text-indigo-600 shadow-sm" : "text-slate-500 hover:text-slate-700"
             }`}
           >
-            🌍 زائر أجنبي
+            {t.foreignBtn}
           </button>
         </div>
 
         <div className="text-sm font-bold text-amber-600 bg-amber-50 inline-block px-4 py-2 rounded-xl mt-4 border border-amber-200">
-          👶 خصم يصل إلى 40% للأطفال أقل من 10 سنوات (تُحسب في شاشة الحجز)
+          {t.discount}
         </div>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {packages.map((pkg, i) => {
+        {t.packages.map((pkg, i) => {
           const price = visitorType === "arab" ? pkg.arabPrice : pkg.foreignerPrice;
           
           return (
@@ -128,7 +109,7 @@ export default function PricingSection({ onBook }) {
             >
               {pkg.highlight && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg flex items-center gap-1 w-max">
-                  <Sparkles className="w-3 h-3" /> الأكثر شعبية
+                  <Sparkles className="w-3 h-3" /> {t.popular}
                 </div>
               )}
 
@@ -139,8 +120,8 @@ export default function PricingSection({ onBook }) {
                 <div className="mt-4 mb-2 flex items-end gap-1">
                   <span className="text-4xl font-black text-indigo-600">{price}</span>
                   <div className="mb-1">
-                    <span className="text-sm font-bold text-slate-400">ج.م</span>
-                    <span className="text-[10px] text-slate-400 block -mt-1">/ بالغ</span>
+                    <span className="text-sm font-bold text-slate-400">{t.currency}</span>
+                    <span className="text-[10px] text-slate-400 block -mt-1">{t.perAdult}</span>
                   </div>
                 </div>
               </div>
@@ -164,8 +145,8 @@ export default function PricingSection({ onBook }) {
                     : "bg-slate-50 text-indigo-600 hover:bg-indigo-50"
                 }`}
               >
-                احجز هذه الباقة
-                <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                {t.bookBtn}
+                {lang === "ar" ? <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> : <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />}
               </button>
             </motion.div>
           );
