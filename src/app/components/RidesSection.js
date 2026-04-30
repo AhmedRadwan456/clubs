@@ -17,7 +17,7 @@ export default function RidesSection({ lang }) {
         { emoji: "🧊", name: "صالة الجليد", desc: "أكبر صالة تزلج على الجليد للهروب من الحر والاستمتاع بوقت رائع", tag: "مرح", tagColor: "bg-sky-100 text-sky-600", paid: true },
         { emoji: "🚀", name: "المقلاع البشري", desc: "انطلاق صاروخي للسماء بسرعة خيالية — اللعبة الأكثر رعباً وإثارة", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "👓", name: "سينما 3D التفاعلية", desc: "تجربة واقع افتراضي مبهرة مع حركة، هواء، ومؤثرات حقيقية", tag: "تكنولوجيا", tagColor: "bg-purple-100 text-purple-600", paid: true },
-        { emoji: "🧗‍♂️", name: "الزيبلاين العملاق", desc: "تحليق في الهواء فوق كل الملاهي على سلك بطول المتنزه بالكامل", tag: "مغامرة", tagColor: "bg-teal-100 text-teal-600", paid: true },
+
         { emoji: "👻", name: "بيت الرعب الحقيقي", desc: "رحلة مرعبة داخل قصر مظلم مليء بالممثلين الحقيقيين والمفاجآت", tag: "Horror", tagColor: "bg-slate-100 text-slate-800", paid: false },
         { emoji: "🎢", name: "الأفعونية الفائقة", desc: "أسرع أفعونية في الشرق الأوسط — تصل إلى 120 كم/س بانقلابات مذهلة", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "🗼", name: "برج السقوط الحر", desc: "سقوط حر من ارتفاع 60 متراً — تجربة تحبس الأنفاس لمحبي الأدرينالين", tag: "إثارة", tagColor: "bg-orange-100 text-orange-600", paid: false },
@@ -41,7 +41,7 @@ export default function RidesSection({ lang }) {
         { emoji: "🧊", name: "Ice Skating Rink", desc: "A massive ice rink to escape the heat and enjoy an amazing time.", tag: "Fun", tagColor: "bg-sky-100 text-sky-600", paid: true },
         { emoji: "🚀", name: "Human Slingshot", desc: "A rocket launch into the sky at unbelievable speeds — the most terrifying ride.", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "👓", name: "Interactive 3D Cinema", desc: "A stunning VR experience with motion, wind, and hyper-realistic effects.", tag: "Tech", tagColor: "bg-purple-100 text-purple-600", paid: true },
-        { emoji: "🧗‍♂️", name: "Giant Zipline", desc: "Fly high in the air over the entire park on a wire spanning the full length.", tag: "Adventure", tagColor: "bg-teal-100 text-teal-600", paid: true },
+
         { emoji: "👻", name: "Real Haunted House", desc: "A terrifying journey inside a dark mansion filled with live actors and scares.", tag: "Horror", tagColor: "bg-slate-100 text-slate-800", paid: false },
         { emoji: "🎢", name: "Hyper Coaster", desc: "The fastest rollercoaster in the Middle East — up to 120 km/h with mind-blowing loops.", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "🗼", name: "Drop Tower", desc: "A free fall from 60 meters high — a breathtaking experience for adrenaline junkies.", tag: "Thrill", tagColor: "bg-orange-100 text-orange-600", paid: false },
