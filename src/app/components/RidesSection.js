@@ -6,7 +6,7 @@ export default function RidesSection({ lang }) {
     ar: {
       badge: "🎢 أشهر الألعاب العالمية",
       title: "عالم المغامرات",
-      desc: "استمتع بأكثر من 20 لعبة وفعالية ترفيهية تناسب الجميع، إليك قائمة بأشهر 12 لعبة منها:",
+      desc: "استمتع بأكثر من 20 لعبة وفعالية ترفيهية تناسب الجميع، إليك قائمة بأهم 12 لعبة (9 ألعاب مميزة و3 ألعاب مجانية):",
       bannerIcon: "🔥",
       bannerTitle: "أضخم تجمع ترفيهي",
       bannerDesc: "من الألعاب العائلية الهادئة وحتى الألعاب التي تحبس الأنفاس! وهناك الكثير بانتظارك...",
@@ -20,9 +20,9 @@ export default function RidesSection({ lang }) {
         { emoji: "👓", name: "سينما 3D التفاعلية", desc: "تجربة واقع افتراضي مبهرة مع حركة، هواء، ومؤثرات حقيقية", tag: "تكنولوجيا", tagColor: "bg-purple-100 text-purple-600", paid: true },
         { emoji: "✂️", name: "المقص العملاق", desc: "دوران كامل 360 درجة في الهواء — تحدي الجاذبية لأصحاب القلوب القوية", tag: "إثارة", tagColor: "bg-red-100 text-red-600", paid: true },
 
-        { emoji: "🗼", name: "برج السقوط الحر", desc: "سقوط مفاجئ من ارتفاع 60 متراً — تجربة الأدرينالين القصوى", tag: "إثارة", tagColor: "bg-orange-100 text-orange-600", paid: false },
-        { emoji: "👻", name: "قصر الرعب المسكون", desc: "رحلة مرعبة داخل قصر مليء بالأشباح والممثلين — هل تجرؤ على الدخول؟", tag: "رعب", tagColor: "bg-slate-100 text-slate-800", paid: false },
-        { emoji: "🧩", name: "متاهة المرايا العجيبة", desc: "متاهة مليئة بالانعكاسات والممرات المخدوعة — هل ستتمكن من إيجاد مخرجك؟", tag: "ذكاء", tagColor: "bg-indigo-100 text-indigo-600", paid: false },
+        { emoji: "🗼", name: "برج السقوط الحر", desc: "سقوط مفاجئ من ارتفاع 60 متراً — تجربة الأدرينالين القصوى", tag: "إثارة", tagColor: "bg-orange-100 text-orange-600", paid: true },
+        { emoji: "👻", name: "قصر الرعب المسكون", desc: "رحلة مرعبة داخل قصر مليء بالأشباح والممثلين — هل تجرؤ على الدخول؟", tag: "رعب", tagColor: "bg-slate-100 text-slate-800", paid: true },
+        { emoji: "🧩", name: "متاهة المرايا العجيبة", desc: "متاهة مليئة بالانعكاسات والممرات المخدوعة — هل ستتمكن من إيجاد مخرجك؟", tag: "ذكاء", tagColor: "bg-indigo-100 text-indigo-600", paid: true },
         { emoji: "🎡", name: "عجلة عين العاصمة", desc: "استمتع بإطلالة بانورامية ساحرة على كامل المدينة من أعلى نقطة في المتنزه", tag: "عائلي", tagColor: "bg-blue-100 text-blue-600", paid: false },
         { emoji: "💥", name: "سيارات التصادم نيون", desc: "ساحة سيارات كهربائية بألوان نيون صاخبة وموسيقى حماسية", tag: "مرح", tagColor: "bg-amber-100 text-amber-600", paid: false },
         { emoji: "🎠", name: "الكاروسيل الملكي", desc: "الدوامة الكلاسيكية الشهيرة — رحلة خيالية للأطفال في عالم من الألوان", tag: "أطفال", tagColor: "bg-rose-100 text-rose-600", paid: false },
@@ -31,7 +31,7 @@ export default function RidesSection({ lang }) {
     en: {
       badge: "🎢 World-Class Attractions",
       title: "Adventure World",
-      desc: "Enjoy over 20 rides and entertainment activities for everyone. Here are our top 12 attractions:",
+      desc: "Enjoy over 20 rides and entertainment activities for everyone. Here are our top 12 attractions (9 Premium & 3 Free):",
       bannerIcon: "🔥",
       bannerTitle: "The Ultimate Thrill Zone",
       bannerDesc: "From cutting-edge VR to heart-pumping drops — and many more surprises!",
@@ -45,9 +45,9 @@ export default function RidesSection({ lang }) {
         { emoji: "👓", name: "Interactive 3D Cinema", desc: "A stunning VR experience with motion, wind, and hyper-realistic effects.", tag: "Tech", tagColor: "bg-purple-100 text-purple-600", paid: true },
         { emoji: "✂️", name: "The Giant Scissors", desc: "A full 360-degree rotation in mid-air — the ultimate gravity-defying thrill.", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
 
-        { emoji: "🗼", name: "Zero-G Drop Tower", desc: "A sudden free fall from 60 meters high — the ultimate adrenaline rush.", tag: "Thrill", tagColor: "bg-orange-100 text-orange-600", paid: false },
-        { emoji: "👻", name: "Haunted Mansion", desc: "A terrifying journey inside a mansion full of ghosts and live actors — do you dare?", tag: "Horror", tagColor: "bg-slate-100 text-slate-800", paid: false },
-        { emoji: "🧩", name: "The Magical Mirror Maze", desc: "A maze full of reflections and trick paths — will you be able to find your way out?", tag: "Mind", tagColor: "bg-indigo-100 text-indigo-600", paid: false },
+        { emoji: "🗼", name: "Zero-G Drop Tower", desc: "A sudden free fall from 60 meters high — the ultimate adrenaline rush.", tag: "Thrill", tagColor: "bg-orange-100 text-orange-600", paid: true },
+        { emoji: "👻", name: "Haunted Mansion", desc: "A terrifying journey inside a mansion full of ghosts and live actors — do you dare?", tag: "Horror", tagColor: "bg-slate-100 text-slate-800", paid: true },
+        { emoji: "🧩", name: "The Magical Mirror Maze", desc: "A maze full of reflections and trick paths — will you be able to find your way out?", tag: "Mind", tagColor: "bg-indigo-100 text-indigo-600", paid: true },
         { emoji: "🎡", name: "Capital Eye", desc: "Enjoy a magical panoramic view of the entire city from the park's highest point.", tag: "Family", tagColor: "bg-blue-100 text-blue-600", paid: false },
         { emoji: "💥", name: "Neon Bumper Cars", desc: "Electric car arena with vibrant neon colors and high-energy music.", tag: "Fun", tagColor: "bg-amber-100 text-amber-600", paid: false },
         { emoji: "🎠", name: "Royal Carousel", desc: "The famous classic carousel — a magical journey for kids in a world of colors.", tag: "Kids", tagColor: "bg-rose-100 text-rose-600", paid: false },
