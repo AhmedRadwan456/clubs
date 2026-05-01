@@ -14,11 +14,11 @@ export default function RidesSection({ lang }) {
       freeBadge: "✔️ مشمولة بالدخول",
       rides: [
         { emoji: "🏎️", name: "حلبة الكارتينج المحترفة", desc: "أسرع حلبة سباق في المنطقة — جرب إثارة الفورمولا 1 مع أصدقائك", tag: "إثارة", tagColor: "bg-emerald-100 text-emerald-600", paid: true },
-        { emoji: "🥷", name: "ساحة تحدي النينجا", desc: "مزيج بين الترامبولين وعقبات النينجا — اختبر قوتك ومرونتك في الهواء", tag: "نشاط", tagColor: "bg-yellow-100 text-yellow-600", paid: true },
-        { emoji: "🚀", name: "المقلاع البشري", desc: "انطلاق صاروخي للسماء بسرعة خيالية — اللعبة الأكثر رعباً وتشويقاً في العالم", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
+        { emoji: "🤸", name: "مجمع الترامبولين العملاق", desc: "أكبر منطقة قفز حر وعقبات حركية — فرغ طاقتك واستمتع بالمغامرة", tag: "نشاط", tagColor: "bg-yellow-100 text-yellow-600", paid: true },
+        { emoji: "🚀", name: "الصاروخ البشري", desc: "انطلاق صاروخي للسماء بسرعة خالية — تجربة مرعبة ومشوقة لن تنساها", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "🎢", name: "الأفعونية الفائقة", desc: "أسرع أفعونية في الشرق الأوسط — سرعات خيالية وانقلابات تحبس الأنفاس", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "👓", name: "سينما 3D التفاعلية", desc: "تجربة واقع افتراضي مبهرة مع حركة، هواء، ومؤثرات حقيقية", tag: "تكنولوجيا", tagColor: "bg-purple-100 text-purple-600", paid: true },
-        { emoji: "🌪️", name: "نفق الرياح العمودي", desc: "طيران حقيقي في الهواء الطلق — تجربة القفز المظلي دون الحاجة لطائرة", tag: "إثارة", tagColor: "bg-slate-100 text-slate-600", paid: true },
+        { emoji: "✂️", name: "المقص العملاق", desc: "دوران كامل 360 درجة في الهواء — تحدي الجاذبية لأصحاب القلوب القوية", tag: "إثارة", tagColor: "bg-red-100 text-red-600", paid: true },
 
         { emoji: "🗼", name: "برج السقوط الحر", desc: "سقوط مفاجئ من ارتفاع 60 متراً — تجربة الأدرينالين القصوى", tag: "إثارة", tagColor: "bg-orange-100 text-orange-600", paid: false },
         { emoji: "👻", name: "قصر الرعب المسكون", desc: "رحلة مرعبة داخل قصر مليء بالأشباح والممثلين — هل تجرؤ على الدخول؟", tag: "رعب", tagColor: "bg-slate-100 text-slate-800", paid: false },
@@ -39,11 +39,11 @@ export default function RidesSection({ lang }) {
       freeBadge: "✔️ Legendary (Free)",
       rides: [
         { emoji: "🏎️", name: "Pro Go-Kart Circuit", desc: "The fastest track in the region — experience Formula 1 thrills with your friends.", tag: "Thrill", tagColor: "bg-emerald-100 text-emerald-600", paid: true },
-        { emoji: "🥷", name: "Ninja Warrior Arena", desc: "A mix of trampolines and ninja obstacles — test your strength and agility in mid-air.", tag: "Active", tagColor: "bg-yellow-100 text-yellow-600", paid: true },
-        { emoji: "🚀", name: "Human Slingshot", desc: "Rocket into the sky at unbelievable speeds — the world's most terrifyingly fun ride.", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
+        { emoji: "🤸", name: "Giant Trampoline Park", desc: "The largest free-jump area and obstacle course — release your energy and enjoy the adventure.", tag: "Active", tagColor: "bg-yellow-100 text-yellow-600", paid: true },
+        { emoji: "🚀", name: "Human Rocket", desc: "Rocket into the sky at unbelievable speeds — a terrifying and thrilling experience you won't forget.", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "🎢", name: "Hyper Coaster", desc: "The fastest rollercoaster in the Middle East — extreme speeds and breathtaking loops.", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
         { emoji: "👓", name: "Interactive 3D Cinema", desc: "A stunning VR experience with motion, wind, and hyper-realistic effects.", tag: "Tech", tagColor: "bg-purple-100 text-purple-600", paid: true },
-        { emoji: "🌪️", name: "Vertical Wind Tunnel", desc: "True flight in open air — the experience of skydiving without needing a plane.", tag: "Thrill", tagColor: "bg-slate-100 text-slate-600", paid: true },
+        { emoji: "✂️", name: "The Giant Scissors", desc: "A full 360-degree rotation in mid-air — the ultimate gravity-defying thrill.", tag: "Extreme", tagColor: "bg-red-100 text-red-600", paid: true },
 
         { emoji: "🗼", name: "Zero-G Drop Tower", desc: "A sudden free fall from 60 meters high — the ultimate adrenaline rush.", tag: "Thrill", tagColor: "bg-orange-100 text-orange-600", paid: false },
         { emoji: "👻", name: "Haunted Mansion", desc: "A terrifying journey inside a mansion full of ghosts and live actors — do you dare?", tag: "Horror", tagColor: "bg-slate-100 text-slate-800", paid: false },
