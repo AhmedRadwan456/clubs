@@ -6,10 +6,10 @@ export default function RidesSection({ lang }) {
     ar: {
       badge: "🎢 أشهر الألعاب العالمية",
       title: "عالم المغامرات",
-      desc: "يضم 12 لعبة من أقوى وأشهر الألعاب — 6 ألعاب مجانية مع التذكرة، و 6 ألعاب مميزة (مدفوعة) للباقات",
+      desc: "استمتع بأكثر من 20 لعبة وفعالية ترفيهية تناسب الجميع، إليك قائمة بأشهر 12 لعبة منها:",
       bannerIcon: "🔥",
       bannerTitle: "أضخم تجمع ترفيهي",
-      bannerDesc: "من الألعاب العائلية الهادئة وحتى الألعاب التي تحبس الأنفاس!",
+      bannerDesc: "من الألعاب العائلية الهادئة وحتى الألعاب التي تحبس الأنفاس! وهناك الكثير بانتظارك...",
       paidBadge: "⭐️ لعبة مميزة (مدفوعة)",
       freeBadge: "✔️ مشمولة بالدخول",
       rides: [
@@ -31,10 +31,10 @@ export default function RidesSection({ lang }) {
     en: {
       badge: "🎢 World-Class Attractions",
       title: "Adventure World",
-      desc: "Featuring 12 high-octane rides — 6 legendary free rides, and 6 elite premium attractions for the ultimate thrill.",
+      desc: "Enjoy over 20 rides and entertainment activities for everyone. Here are our top 12 attractions:",
       bannerIcon: "🔥",
       bannerTitle: "The Ultimate Thrill Zone",
-      bannerDesc: "From cutting-edge VR to heart-pumping drops — We have it all!",
+      bannerDesc: "From cutting-edge VR to heart-pumping drops — and many more surprises!",
       paidBadge: "⭐️ Elite (Paid)",
       freeBadge: "✔️ Legendary (Free)",
       rides: [
@@ -119,6 +119,19 @@ export default function RidesSection({ lang }) {
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="mt-12 text-center"
+      >
+        <p className="text-slate-400 font-medium italic">
+          {lang === "ar" 
+            ? "... بالإضافة إلى العشرات من الألعاب الجانبية، ألعاب المهارات، والمطاعم العالمية المنتشرة في أنحاء المتنزه" 
+            : "... plus dozens of side games, skill challenges, and international restaurants located throughout the park"}
+        </p>
+      </motion.div>
     </section>
   );
 }
